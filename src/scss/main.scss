@@ -11,6 +11,50 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $black;
+  background: $grey;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.card {
+  background: $white;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  // max-width: 800px;
+  // max-width: 600px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.person {
+  display: flex;
+  align-items: flex-start;
+}
+
+.person__photo {
+  max-width: 120px;
+  max-height: 170px;
+  border-radius: 50% 50% 50% 50% ;
+  margin-right: 20px;
+}
+
+.person__name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.person__position {
+  font-size: 18px;
+  color: $grey;
+  font-style: italic;
 }

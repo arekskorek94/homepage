@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site title</title>
+    <meta name="description" content="Description" />
+
+    <!-- Title -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/home.css" />
 </head>
+
 <body>
-    
+    <header class="navigation">
+        <nav>
+            <ul class="navigation__list">
+                <li><a class="navigation__list__item" href="#">test</a></li>
+                <li><a class="navigation__list__item" href="#">test2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="header">
+            <pre class="header__typewriter" id="typewriter">
+                <span class="header__typewriter__span--margin header__typewriter__span">var</span> object = {
+                    <span class="header__typewriter__span--margin">name:</span> <span class="header__typewriter__span--highlight">'Arkadiusz Skorek'</span>,
+                    <span class="header__typewriter__span--margin">type:</span> <span class="header__typewriter__span--highlight">'Programmer'</span>,
+                    <span class="header__typewriter__span--margin">location:</span> <span class="header__typewriter__span--highlight">'Warsaw'</span>,
+                    <span class="header__typewriter__span--margin">properties:[</span><span class="header__typewriter__span--highlight">'C#'</span>,
+                                <span class=" header__typewriter__span--margin header__typewriter__span--highlight">'Angular'</span>,
+                                <span class="header__typewriter__span--margin header__typewriter__span--highlight">'SQL'</span>];
+                }
+            </pre>
+        </header>
+        <section class="content">
+            <p>article</p>
+        </section>
+        <footer class="footer">
+            <p>test</p>
+        </footer>
+        </div>
+
+
+        <script src="js/main.js"></script>
 </body>
+
 </html>

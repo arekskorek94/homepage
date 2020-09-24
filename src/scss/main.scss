@@ -1,12 +1,13 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -19,20 +20,15 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 .card {
   background: $white;
-  border-radius: 20px;
+  border-radius: $standardRadius;
   max-width: 600px;
   width: 100%;
   padding: 30px;
-  // max-width: 800px;
-  // max-width: 600px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  margin-bottom: 30px;
 }
 
 .person {
@@ -40,10 +36,16 @@ body {
   align-items: flex-start;
 }
 
+.blog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .person__photo {
   max-width: 120px;
   max-height: 170px;
-  border-radius: 50% 50% 50% 50% ;
+  border-radius: $standardRadius;
   margin-right: 20px;
 }
 
@@ -55,6 +57,7 @@ body {
 }
 
 .person__position {
+  margin: 0;
   font-size: 12px;
   color: $grey;
   font-style: italic;
@@ -63,15 +66,54 @@ body {
 .person__description {
   color: $grey;
 
-  &--highlight{
+  &--highlight {
     color: $yellow;
   }
-} 
+}
 
 .person__socialMedia {
   color: $grey;
 
   &--link {
-    color:$yellow;
+    color: $yellow;
+    text-decoration: none;
   }
 }
+
+.blog__link{
+  text-align: center;
+  max-width: 150px;
+  padding-top:  20px;
+  padding-bottom: 5px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid $yellow;
+  border-radius: $standardRadius;
+  text-decoration: none;
+  transition: background .6s linear;
+  color: $yellow;
+  &--text{
+    font-size: 20px;
+    
+  }
+  &:hover {
+    background: $yellow;
+    color: $grey;
+  }
+}
+
+.blog__description--text{
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 500px) {
+  .person__name{
+  line-height: 35px;
+  }
+  body{
+    padding: 5px;
+  }
+
+}
+

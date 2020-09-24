@@ -418,6 +418,12 @@ body {
   .person__name {
     line-height: 35px; }
   body {
-    padding: 5px; } }
+    padding: 5px; }
+  .person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 /*# sourceMappingURL=main.css.map */

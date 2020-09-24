@@ -21,10 +21,12 @@ if ('serviceWorker' in navigator) {
 var hamburgerMenu = document.querySelector('.navigation__button');
 
 hamburgerMenu.addEventListener('click', (e) => {
+  var navigation = document.querySelector('.navigation');
   var navigationList = document.querySelector('.navigation__list--js');
   var isOpened = hamburgerMenu.classList.contains('opened');
   
     navigationList.classList.toggle("navigation--visiable", isOpened);
+    navigation.classList.toggle("navigation--visiable", isOpened);
   
 });
 

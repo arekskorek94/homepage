@@ -161,22 +161,26 @@ body {
     
     .navigation{
         min-height: 40px;
+        width: 50px;
     }
     .navigation__list{
         display: none;
         padding-left: 5px;
     }
     .navigation--visiable{
+
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     
     .navigation__list__item{
-        padding: 2px;
+        padding: 1.5px 5px;
         margin: 10px;
     }
     .navigation__button{
         display: flex;
+        z-index: 100;
     }
 }
 

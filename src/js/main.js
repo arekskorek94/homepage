@@ -16,6 +16,21 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
+// hamburger menu
+
+var hamburgerMenu = document.querySelector('.navigation__button');
+
+hamburgerMenu.addEventListener('click', (e) => {
+  var navigationList = document.querySelector('.navigation__list--js');
+  var isOpened = hamburgerMenu.classList.contains('opened');
+  
+    navigationList.classList.toggle("navigation--visiable", isOpened);
+  
+});
+
+
+// typewriter
+
 function setupTypewriter(t) {
   var HTML = t.innerHTML;
 

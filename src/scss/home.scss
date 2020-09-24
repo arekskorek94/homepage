@@ -16,7 +16,6 @@ body {
     margin: 0;
     color: $black;
     background: $grey;
-    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -35,11 +34,15 @@ body {
 }
 
 .navigation {
-    background-color: #eff8e2;
+    background-color: $white;
     position: fixed;
     margin: 0;
+    min-height: 50px;
     width: 100%;
     top: 0;
+    box-shadow: 0 8px 4px -6px black;
+    border-radius: 0 0 6px 6px;
+    z-index: 99;
     &__list {
         list-style: none;
         display: flex;
@@ -47,12 +50,62 @@ body {
         align-items: flex-start;
 
         &__item {
+            box-sizing: border-box;
             color: $linkColor;
             text-decoration: none;
             padding: 10px;
+            &:hover {
+                background-color: $linkHoverColor;
+                border-radius: $standardRadius;
+            }
         }
     }
 }
+
+.navigation__button {
+    background-color: transparent;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    display: none;
+
+    &--line {
+        fill: none;
+        stroke: $grey;
+        stroke-width: 4;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &--line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+    &--line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+    }
+    &--line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+}
+
+.opened .navigation__button--line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .navigation__button--line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.opened .navigation__button--line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
 .header,
 .content {
     max-width: 1000px;
@@ -67,10 +120,10 @@ body {
 
     &__typewriter {
         min-height: 180px;
-        min-width: 350px;
+        min-width: 250px;
         max-width: 500px;
         width: 100%;
-        background-color: white;
+        background-color: $white;
         border-radius: $standardRadius;
         box-sizing: border-box;
         font-size: 15px;
@@ -82,7 +135,7 @@ body {
             animation: blink 500ms linear infinite alternate;
         }
         &__span {
-            &--margin{
+            &--margin {
                 margin-left: -100px;
             }
             &--highlight {
@@ -98,14 +151,44 @@ body {
 .footer {
     grid-area: footer;
     margin: 0;
+    padding: 5px 5px 5px 15px;
+    background-color: $white;
+    box-shadow: 0 8px 4px -6px black;
+    border-radius: 6px 6px 0 0;
 }
 
-@media (max-width: 500px){
-    body{
+@media(max-width:600px){
+    
+    .navigation{
+        min-height: 40px;
+    }
+    .navigation__list{
+        display: none;
+        padding-left: 5px;
+    }
+    .navigation--visiable{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navigation__list__item{
+        padding: 2px;
+        margin: 10px;
+    }
+    .navigation__button{
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
         padding: 0;
     }
-    .header{
+    .header {
         padding: 5px;
+        &__typewriter {
+            font-size: 12px;
+        }
     }
 }
 
@@ -135,3 +218,4 @@ body {
         opacity: 1;
     }
 }
+

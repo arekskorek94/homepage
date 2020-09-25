@@ -127,7 +127,7 @@ body {
         min-width: 250px;
         max-width: 500px;
         width: 100%;
-        background-color: $white;
+        background-color: #2b2b2b;
         border-radius: $standardRadius;
         box-sizing: border-box;
         font-size: 15px;
@@ -149,10 +149,12 @@ body {
     }
 }
 .content {
+    color:$grey;
     grid-area: content;
     font-family: 'Dosis', sans-serif;
     &__header{
-        font-size: 20px;
+        font-size: 35px;
+        text-align: center;
         color: $grey;
         font-family: 'Dosis', sans-serif;
         text-transform: capitalize;
@@ -161,15 +163,39 @@ body {
     }
     &__description{
         text-indent: 25px;
-        color: $black;
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         font-family: 'Dosis', sans-serif;
+
     }
+    
+    &__list{
+        list-style: none;
+        &--item
+        {
+            margin: 5px 0;
+            &:before{
+                content: '';
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                background-image: url(../assets/pwa/icons/listIcon.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        
+
+        // list-style-image: url(../assets/pwa/icons/listIcon.png);
+        
+    }
+
+    
 }
 
 .container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row-reverse wrap;
     justify-content: center;
 }
 
@@ -223,6 +249,11 @@ body {
         &--description{
             text-indent: 25px;
         }
+        &--link{
+            @extend .highlight;
+            text-decoration: none;
+        }
+
     }
 }
 

@@ -39,14 +39,14 @@
     <main class="main">
         <header class="header">
             <pre class="header__typewriter" id="typewriter">
-                <span class="header__typewriter__span--margin header__typewriter__span">var</span> object = {
-                    <span class="header__typewriter__span--margin">name:</span> <span class="header__typewriter__span--highlight">'Arkadiusz Skorek'</span>,
-                    <span class="header__typewriter__span--margin">type:</span> <span class="header__typewriter__span--highlight">'Programmer'</span>,
-                    <span class="header__typewriter__span--margin">location:</span> <span class="header__typewriter__span--highlight">'Warsaw'</span>,
-                    <span class="header__typewriter__span--margin">properties:[</span><span class="header__typewriter__span--highlight">'C#'</span>,
-                                <span class=" header__typewriter__span--margin header__typewriter__span--highlight">'Angular'</span>,
-                                <span class="header__typewriter__span--margin header__typewriter__span--highlight">'SQL'</span>];
-                }
+                <span class="header__typewriter__span--margin header__typewriter__span orange">var</span> <span class="grey">object = {</span>
+                    <span class="header__typewriter__span--margin violet">name:</span> <span class="green">'Arkadiusz Skorek'</span><span class="grey">,</span>
+                    <span class="header__typewriter__span--margin violet">type:</span> <span class="green">'Programmer'</span><span class="grey">,</span>
+                    <span class="header__typewriter__span--margin violet">location:</span> <span class="green">'Warsaw'</span><span class="grey">,</span>
+                    <span class="header__typewriter__span--margin violet">properties:[</span><span class="green">'C#'</span><span class="grey">,</span>
+                                <span class=" header__typewriter__span--margin green">'Angular'</span><span class="grey">,</span>
+                                <span class="header__typewriter__span--margin  green">'SQL'</span><span class="grey">];</span>
+                <span>};</span>
             </pre>
         </header>
         <section class="content">
@@ -54,13 +54,13 @@
             <p class="content__description">
                 Mam na imie Arek, mój dom rodzinny znajduję się pod Radomiem. Od 2018 roku realizuje się zawodowo w stolicy jako .NET developer.
                 W 2015 roku rozpocząłem studia na Katolickim Uniwersytecie im. Jana Pawła II w Lublinie na kierunku Informatyka.
-                Studia pierwszego stopnia zakończyłem ze specjalizacją "Programowanie". Wolny czas spedzam zazwyczaj z moją druga połówką, m.in.                
+                Studia pierwszego stopnia zakończyłem ze specjalizacją "Programowanie". Wolny czas spedzam zazwyczaj z moją druga połówką, m.in.:                
             </p>
-            <ul>
-                <li>Trening siłowy.</li>
-                <li>Rowery</li>
-                <li>Długie spacery</li>
-                <li>Oglądanie seriali i wiele innych...</li>
+            <ul class="content__list">
+                <li class="content__list--item">Trening siłowy.</li>
+                <li class="content__list--item">Rowery</li>
+                <li class="content__list--item">Długie spacery</li>
+                <li class="content__list--item">Oglądanie seriali i wiele innych...</li>
             </ul>
             <!-- <h1 class="content__header">Trekking</h1>
             <p class="content__description" >
@@ -91,43 +91,37 @@
                             <h1 class="card__content--header">Trekking</h1>
                             <p class="card__content--description">Poza tym łączy nas jeszcze jedna wspólna pasja - Trekking! Przynajmniej dwa razy w roku jeździmy w Tatry. 
                                 W tym roku planujemy wyjazd gdzieś dalej, albo zrobić jakąś naprawde hardcorową wyprawę. 
-                                Więcej o naszych trekkingowych wyprawach możesz zobaczyć<a class="link" href="#" aria-label="Trekkingowe wycieczki">tu</a>.</p>    
+                                Więcej o naszych trekkingowych wyprawach możesz zobaczyć <a class="card__content--link" href="#" aria-label="Trekkingowe wycieczki">tutaj</a>.</p>    
                         </div>
                         
-                        <a card__content--link href="#">testowy link3</a>
+                        <a class="card__content--link" href="#">Trekking</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card__photo" src="assets/img/meCard.png" alt="Zdjecie gór">
+                    <img class="card__photo" src="assets\img\myKapracz.jpg" alt="Zdjecie gór">
                     <div class="card__content">
                         <div>
-                            <h1 class="card__content--header">Trekking</h1>
-                            <p>Poza tym łączy nas jeszcze jedna wspólna pasja - Trekking! Przynajmniej dwa razy w roku jeździmy w Tatry. 
-                                W tym roku planujemy wyjazd gdzieś dalej, albo zrobić jakąś naprawde hardcorową wyprawę. 
-                                Więcej o naszych trekkingowych wyprawach możesz zobaczyć<a class="link" href="#" aria-label="Trekkingowe wycieczki">tu</a>.</p>    
+                            <h1 class="card__content--header">Trening siłowy</h1>
+                            <p>Moja przygoda z siłownią zaczeła się w 2016 roku (było kilka prób wcześniej, ale zakończyły się niewypałem).
+                                Treningiem siłowym zaraził mnie kolega ze studiów, dzięki któremu <strong class="highlight">UWAGA</strong> zrzuciłem 35kg.
+                                Jeszcze raz chciałbym mu serdecznie podziękować za pomoc i przekazaną wiedze. Jak to zrobiłem? Przejdz <a class="card__content--link" href="#" aria-label="Trekkingowe wycieczki">tutaj</a>.</p>    
                         </div>
-                        <a card__content--link href="#">testowy link3</a>
+                        <a class="card__content--link" href="#">Trening siłowy</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card__photo" src="assets/img/meCard.png" alt="Zdjecie gór">
+                    <img class="card__photo" src="assets\img\js_kod.jpg" alt="Zdjecie gór">
                     <div class="card__content">
                         <div>
-                            <h1 class="card__content--header">Trekking</h1>
-                            <p>Poza tym łączy nas jeszcze jedna wspólna pasja - Trekking! Przynajmniej dwa razy w roku jeździmy w Tatry. 
-                                W tym roku planujemy wyjazd gdzieś dalej, albo zrobić jakąś naprawde hardcorową wyprawę. 
-                                Więcej o naszych trekkingowych wyprawach możesz zobaczyć<a class="link" href="#" aria-label="Trekkingowe wycieczki">tu</a>.</p>    
+                            <h1 class="card__content--header">Programowanie</h1>
+                            <p>Obecnie jestem programistą .net, ale na studiach lubiałem "bawić się we frontendy". Chciałbym zostać fullstack developerem.
+                                Strona, którą czytasz powstała, aby przypomnieć programowanie we frontendzie - bez bootstrapa lub innych tego typu narzędzi.
+                                Więcej można przeczytać <a class="card__content--link" href="#" aria-label="Trekkingowe wycieczki">tutuj</a>.</p>    
                         </div>
-                        <a card__content--link href="#">testowy link3</a>
+                        <a class="card__content--link" href="#">Programowanie</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card__photo" src="assets/img/meCard.png" alt="Zdjecie gór">
-                    <div class="card__content">
-                        <p class="card__content--p">Jakiś tekst testowy4</p>
-                        <a class="card__content--link" href="#">testowy link4</a>
-                    </div>
-                </div>
+
 
             </div>
         </section>

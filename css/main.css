@@ -310,6 +310,18 @@ template {
 .highlight {
   color: #fcaf58; }
 
+.orange {
+  color: #cc7832; }
+
+.green {
+  color: #5c633c; }
+
+.violet {
+  color: #98769a; }
+
+.grey {
+  color: #a9a5a9; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }

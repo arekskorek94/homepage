@@ -1,4 +1,4 @@
-# wtf-gulp-starter
+# blog
 
 `npm install -g gulp-cli`
 

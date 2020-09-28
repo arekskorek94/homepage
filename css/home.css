@@ -457,6 +457,7 @@ body {
     padding: 5px; }
     .header__typewriter:after {
       content: "|";
+      color: #546a76;
       -webkit-animation: blink 500ms linear infinite alternate;
               animation: blink 500ms linear infinite alternate; }
     .header__typewriter__span--margin {

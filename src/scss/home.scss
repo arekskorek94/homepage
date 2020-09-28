@@ -136,6 +136,7 @@ body {
         padding: 5px;
         &:after {
             content: "|";
+            color: $grey;
             animation: blink 500ms linear infinite alternate;
         }
         &__span {

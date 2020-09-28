@@ -19,16 +19,18 @@ if ('serviceWorker' in navigator) {
 // hamburger menu
 
 var hamburgerMenu = document.querySelector('.navigation__button');
+if(hamburgerMenu != null){
+    hamburgerMenu.addEventListener('click', (e) => {
+        var navigation = document.querySelector('.navigation');
+        var navigationList = document.querySelector('.navigation__list--js');
+        var isOpened = hamburgerMenu.classList.contains('opened');
+        
+          navigationList.classList.toggle("navigation--visiable", isOpened);
+          navigation.classList.toggle("navigation--visiable", isOpened);
+        
+      });
+}
 
-hamburgerMenu.addEventListener('click', (e) => {
-  var navigation = document.querySelector('.navigation');
-  var navigationList = document.querySelector('.navigation__list--js');
-  var isOpened = hamburgerMenu.classList.contains('opened');
-  
-    navigationList.classList.toggle("navigation--visiable", isOpened);
-    navigation.classList.toggle("navigation--visiable", isOpened);
-  
-});
 
 
 // typewriter
